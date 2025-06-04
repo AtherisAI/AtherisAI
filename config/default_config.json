@@ -1,0 +1,31 @@
+{
+    "system_name": "AtherisAI",
+    "version": "1.0.0",
+    "enabled_agents": [
+        "learning_agent",
+        "analytical_agent",
+        "output_agent",
+        "responder_agent",
+        "chatbot_agent"
+    ],
+    "poll_interval_seconds": 10,
+    "dashboard": {
+        "host": "0.0.0.0",
+        "port": 8080,
+        "use_ssl": false
+    },
+    "solana": {
+        "cluster": "mainnet-beta",
+        "rpc_url": "https://api.mainnet-beta.solana.com",
+        "websocket_url": "wss://api.mainnet-beta.solana.com/"
+    },
+    "logging": {
+        "level": "INFO",
+        "log_to_file": true,
+        "log_directory": "logs"
+    },
+    "cache": {
+        "enabled": true,
+        "default_ttl": 60
+    }
+}
